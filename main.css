@@ -1,19 +1,50 @@
 body {
-  color: black;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
+	color: black;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
 }
 
 h2 {
-  font-size: 28px;
-  font-weight: 600;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 600;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 p {
-  font-size: 18px;
+	font-size: 18px;
+}
+
+header {
+	height: 8vh;
+}
+
+#lust-auf-was-neues {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	padding-left: 128px;
+	padding-right: 128px;
+	padding-top: 32px;
+	padding-bottom: 100px;
+	background-color: #efefef;
+}
+
+#img-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#img-container img {
+	width: 256px;
+	height: 256px;
+	object-fit: cover;
+	border-radius: 12px;
 }
