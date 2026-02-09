@@ -13,6 +13,7 @@ h2 {
 h3 {
 	font-size: 18px;
 	font-weight: 600;
+  margin: 0;
 }
 
 p {
@@ -23,31 +24,7 @@ header {
 	height: 8vh;
 }
 
-#lust-auf-was-neues {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 32px;
-	padding-left: 128px;
-	padding-right: 128px;
-	padding-top: 32px;
-	padding-bottom: 100px;
-	background-color: #efefef;
-}
 
-#img-container {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-}
-
-#img-container img {
-	width: 256px;
-	height: 256px;
-	object-fit: cover;
-	border-radius: 12px;
-}
 
 .img-recipe-of-the-day-da {
     width: 500px;
@@ -80,3 +57,76 @@ header {
 .p-lasagne-info {
     padding-bottom: 40px;
 }
+
+
+/* Begin of: Lust auf was neues Section */
+
+#lust-auf-was-neues {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding-left: 128px;
+  padding-right: 128px;
+  padding-top: 32px;
+  padding-bottom: 100px;
+  background-color: #efefef;
+}
+
+#food-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#food-container img {
+  width: 256px;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 1100px) {
+  #food-container img {
+    width: 196px;
+    height: 196px;
+  }
+}
+
+@media (max-width: 880px) {
+  #food-container img {
+    width: 148px;
+    height: 148px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  #food-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #lust-auf-was-neues {
+    padding-bottom: 48px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 532px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+/* End of: Lust auf was neues Section */
