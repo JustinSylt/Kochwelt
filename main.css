@@ -1,0 +1,42 @@
+body {
+  color: black;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+#section_subheader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 32px 32px 32px 32px;
+}
+
+#section_header {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+    background-color: dimgray;
+    height: 250px;
+    width: 100%;
+}
