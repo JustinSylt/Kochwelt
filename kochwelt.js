@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (!portionInput) return;
 
     const amountCells = document.querySelectorAll('#recipe-ingredients .table-ingredients td.td-padding');
+    const warningMessage = document.querySelector('#recipe-ingredients .warning-message');
+  
+    let lastAppliedPortions = parseFloat(portionInput.value) || 1;
+    let warningTimeout = null;
   
     // Begrenze die Eingabe auf maximal 20
   portionInput.addEventListener('input', function () {
@@ -12,14 +16,28 @@ document.addEventListener('DOMContentLoaded', function () {
     if (this.value < 1) {
       this.value = 1;
     }
+    // Zeige Warnung nach 5 Sekunden, wenn der Wert sich vom letzten angewendeten unterscheidet
+    const currentPortions = parseFloat(portionInput.value) || 1;
+    if (currentPortions !== lastAppliedPortions) {
+      // Lösche vorherigen Timeout, falls vorhanden
+      if (warningTimeout) {
+        clearTimeout(warningTimeout);
+      }
+      // Starte neuen Timeout für 5 Sekunden
+      warningTimeout = setTimeout(function () {
+        if (warningMessage) {
+          warningMessage.style.display = 'block';
+        }
+      }, 5000);
+    }
   });
 
-	// Parse and store original values (number + unit or raw text)
+	// Parse und speichere Originalwerte (Zahl + Einheit oder roher Text)
 	amountCells.forEach(td => {
 		const text = td.textContent.trim();
 		td.dataset.originalText = text;
 
-		// Try to capture a leading number (integer or decimal, comma or dot)
+		// Versuche, eine führende Zahl zu erfassen (Ganzzahl oder Dezimalzahl, Komma oder Punkt)
 		const m = text.match(/^\s*([0-9]+(?:[.,][0-9]+)?)\s*(.*)$/);
 		if (m) {
 			const num = parseFloat(m[1].replace(',', '.'));
@@ -35,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function formatNumber(n) {
 		if (Math.abs(n - Math.round(n)) < 1e-9) return String(Math.round(n));
-		// show up to 2 decimal places, trim trailing zeros
+		// Zeige bis zu 2 Dezimalstellen, entferne nachfolgende Nullen
 		return String(Number(n.toFixed(2))).replace(/\.0+$/,'');
 	}
 
@@ -50,15 +68,28 @@ document.addEventListener('DOMContentLoaded', function () {
 				const val = parseFloat(origNum) * factor;
 				td.textContent = formatNumber(val) + (origUnit ? ' ' + origUnit : '');
 			} else {
-				// leave non-numeric entries as they were
+				// Hinterlasse nicht-numerische Einträge so wie sie waren
 				td.textContent = td.dataset.originalText || '';
 			}
 		});
 	}
 
-	// Update on blur (when input loses focus) and on change
-	portionInput.addEventListener('blur', updateAmounts);
-	portionInput.addEventListener('change', updateAmounts);
+	// Aktualisiere nur wenn der "Portionen" Button geklickt wird
+	const portionButton = document.querySelector('#recipe-ingredients .button');
+	if (portionButton) {
+		portionButton.addEventListener('click', function () {
+			updateAmounts();
+			// Verstecke die Warnung und speichere die neue Portionszahl
+			lastAppliedPortions = parseFloat(portionInput.value) || 1;
+			if (warningTimeout) {
+				clearTimeout(warningTimeout);
+				warningTimeout = null;
+			}
+			if (warningMessage) {
+				warningMessage.style.display = 'none';
+			}
+		});
+	}
 });
 
 
