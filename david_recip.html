@@ -1,245 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Lasagne</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/fonts.css">
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fonts.css"
+    />
     <script src="./kochwelt.js"></script>
-    <link rel="icon" type="image/png" href="img/fav_icon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="img/fav_icon/favicon.svg" />
-<link rel="shortcut icon" href="img/fav_icon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="img/fav_icon/apple-touch-icon.png" />
-<link rel="manifest" href="img/fav_icon/site.webmanifest" />
-</head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/fav_icon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="img/fav_icon/favicon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/fav_icon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/fav_icon/apple-touch-icon.png"
+    />
+    <link
+      rel="manifest"
+      href="img/fav_icon/site.webmanifest"
+    />
+  </head>
 
-<body class="mybody">
+  <body class="mybody">
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html">
-                <img class="img-logo-png" src="img/logo.png" alt="Kochwelt Logo"><img class="img-small-logo-png" src="img/logo_small.png" alt="Kochwelt Logo">
-                </a>
-            </div>
-            <nav class="navigation">
-                <ul class="nav-links">
-                    <li><a href="index.html">Start</a></li>
-                    <li><a href="david_recip.html">Rezept des Tages</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                    <li><a href="#impressum">Impressum</a></li>
-                </ul>
-            </nav>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              class="img-logo-png"
+              src="img/logo.png"
+              alt="Kochwelt Logo"
+            /><img
+              class="img-small-logo-png"
+              src="img/logo_small.png"
+              alt="Kochwelt Logo"
+            />
+          </a>
         </div>
+        <nav class="navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="david_recip.html">Rezept des Tages</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#impressum">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="grey-border">
-    </div>
+    <div class="grey-border"></div>
     <main>
-        <section id="recipe-details">
-            <h2 class="mobile-h2">Lasagne</h2>
-            <img class="image-lasagne" src="img/lasagne.png" alt="Lasagne">
-            <div class="mobile-time-difficult-date-btn">
-                <div class="padding-right-20px">
-                    <button class="time-difficult-date-btn">
-                        <img class="icons-time-difficult-date" src="img/icons/clock-regular.svg" alt="clock"> 30 Min
-                    </button>
-                </div>
-                <div class="padding-right-20px">
-                    <button class="time-difficult-date-btn">
-                        <img class="icons-time-difficult-date" src="img/icons/brain-solid.svg" alt="brain"> normal
-                    </button>
-                </div>
-                <button class="time-difficult-date-btn">
-                    <img class="icons-time-difficult-date" src="img/icons/calendar-alt-regular.svg" alt="calendar">
-                    06.02.2026
-                </button>
-            </div>
-        </section>
-        <div class="small-grey-border-container">
-            <div class="small-grey-border"></div>
+      <section id="recipe-details">
+        <h2 class="mobile-h2">Lasagne</h2>
+        <img
+          class="image-lasagne"
+          src="img/lasagne.png"
+          alt="Lasagne"
+        />
+        <div class="mobile-time-difficult-date-btn">
+          <div class="padding-right-20px">
+            <button class="time-difficult-date-btn">
+              <img
+                class="icons-time-difficult-date"
+                src="img/icons/clock-regular.svg"
+                alt="clock"
+              />
+              30 Min
+            </button>
+          </div>
+          <div class="padding-right-20px">
+            <button class="time-difficult-date-btn">
+              <img
+                class="icons-time-difficult-date"
+                src="img/icons/brain-solid.svg"
+                alt="brain"
+              />
+              normal
+            </button>
+          </div>
+          <button class="time-difficult-date-btn">
+            <img
+              class="icons-time-difficult-date"
+              src="img/icons/calendar-alt-regular.svg"
+              alt="calendar"
+            />
+            06.02.2026
+          </button>
         </div>
-        <section id="recipe-ingredients">
-            <div class="ingredients-header">
-            <span>Zutaten für</span>
-            <input class="input-ingredients" type="number" min="1" max="20" value="1"><button
-                class="button">Portionen</button>
-            </div>
-            <div class="warning-message" style="display: none; color: #ff6b6b; margin-top: 10px; font-size: 14px;">
-                ⚠️ Bitte klicke auf "Portionen" um die Mengen zu aktualisieren
-            </div>
-            <table class="table-ingredients">
-                <h3 class="caption">Für die Bolognese:</h3>
-                <tr class="grey-row">
-                    <td class="td-padding"></td>
-                    <td>Olivenöl</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding">125 g</td>
-                    <td>Hackfleisch, gemischtes</td>
-                </tr>
-                <tr class="grey-row">
-                    <td class="td-padding">0.25</td>
-                    <td>Zwiebel(n)</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding">0.5</td>
-                    <td>Knoblauchzehe(n)</td>
-                </tr>
-                <tr class="grey-row">
-                    <td class="td-padding">0.25 Bund</td>
-                    <td>Petersilie</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding">0.25 EL</td>
-                    <td>Tomatenmark</td>
-                </tr>
-                <tr class="grey-row">
-                    <td class="td-padding">0.25 Dose</td>
-                    <td>Tomaten, geschälte</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding">etwas</td>
-                    <td>Rotwein</td>
-                </tr>
-            </table>
+      </section>
+      <div class="small-grey-border-container">
+        <div class="small-grey-border"></div>
+      </div>
+      <section id="recipe-ingredients">
+        <div class="ingredients-header">
+          <span>Zutaten für</span>
+          <input
+            class="input-ingredients"
+            type="number"
+            min="1"
+            max="20"
+            value="1"
+          /><button class="button">Portionen</button>
+        </div>
+        <div
+          class="warning-message"
+          style="
+            display: none;
+            color: #ff6b6b;
+            margin-top: 10px;
+            font-size: 14px;
+          "
+        >
+          ⚠️ Bitte klicke auf "Portionen" um die Mengen zu aktualisieren
+        </div>
+        <table class="table-ingredients">
+          <h3 class="caption">Für die Bolognese:</h3>
+          <tr class="grey-row">
+            <td class="td-padding"></td>
+            <td>Olivenöl</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding">125 g</td>
+            <td>Hackfleisch, gemischtes</td>
+          </tr>
+          <tr class="grey-row">
+            <td class="td-padding">0.25</td>
+            <td>Zwiebel(n)</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding">0.5</td>
+            <td>Knoblauchzehe(n)</td>
+          </tr>
+          <tr class="grey-row">
+            <td class="td-padding">0.25 Bund</td>
+            <td>Petersilie</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding">0.25 EL</td>
+            <td>Tomatenmark</td>
+          </tr>
+          <tr class="grey-row">
+            <td class="td-padding">0.25 Dose</td>
+            <td>Tomaten, geschälte</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding">etwas</td>
+            <td>Rotwein</td>
+          </tr>
+        </table>
 
-            <table class="table-ingredients">
-                <h3 class="caption">Für die Béchamelsauce:</h3>
-                <tr class="grey-row">
-                    <td class="td-padding">0.13 Liter</td>
-                    <td>Milch</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding">7.5 g</td>
-                    <td>Butter</td>
-                </tr>
-                <tr class="grey-row">
-                    <td class="td-padding">10 g</td>
-                    <td>Mehl</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding"></td>
-                    <td>Salz und Pfeffer</td>
-                </tr>
-                <tr class="grey-row">
-                    <td class="td-padding"></td>
-                    <td>Zitronensaft</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding"></td>
-                    <td>Muskat</td>
-                </tr>
-            </table>
+        <table class="table-ingredients">
+          <h3 class="caption">Für die Béchamelsauce:</h3>
+          <tr class="grey-row">
+            <td class="td-padding">0.13 Liter</td>
+            <td>Milch</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding">7.5 g</td>
+            <td>Butter</td>
+          </tr>
+          <tr class="grey-row">
+            <td class="td-padding">10 g</td>
+            <td>Mehl</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding"></td>
+            <td>Salz und Pfeffer</td>
+          </tr>
+          <tr class="grey-row">
+            <td class="td-padding"></td>
+            <td>Zitronensaft</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding"></td>
+            <td>Muskat</td>
+          </tr>
+        </table>
 
-            <table class="table-ingredients">
-                <h3 class="caption">Außerdem:</h3>
-                <tr class="grey-row">
-                    <td class="td-padding"></td>
-                    <td>Fett (für die Form)</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding">75 g</td>
-                    <td>Lasagneplatte(n)</td>
-                </tr>
-                <tr class="grey-row">
-                    <td class="td-padding">n. B.</td>
-                    <td>Käse, geriebener</td>
-                </tr>
-                <tr class="white-row">
-                    <td class="td-padding"></td>
-                    <td>Butterflöckchen</td>
-                </tr>
-            </table>
-        </section>
-        <section id="preparation">
-            <h2 class="mobile-h2">Zubereitung</h2>
-            <div class="mobile-preparation-btn">
-                <button class="time-btn">
-                    <img class="icons-time-difficult-date" src="img/icons/clock-regular.svg" alt="clock"> 1 Std. 40 Min.
-                    <p class="font-light">Gesamtzeit</p>
-
-                </button>
-                <button class="time-btn">
-                    <img class="icons-time-difficult-date" src="img/icons/clock-regular.svg" alt="clock"> 30 Min.
-                    <p class="font-light">Arbeitszeit</p>
-                </button>
-                <button class="time-btn">
-                    <img class="icons-time-difficult-date" src="img/icons/clock-regular.svg" alt="clock"> 1 Std. 10 Min.
-                    <p class="font-light">Koch-/Backzeit</p>
-                </button>
-            </div>
-        </section>
-        <article class="preparation-container">
-            <ol>
-                <li>
-                    Bolognese: <br>
-                    <br>
-                    Anbraten: Hackfleisch in Olivenöl scharf anbraten. Zwiebeln und Petersilie kurz mitdünsten.<br>
-                    <br>
-                    Würzen: Knoblauchscheiben und Tomatenmark einrühren und kurz mitrösten.<br>
-                    <br>
-                    Ablöschen: Dosentomaten (und optional Rotwein) dazugeben. Mit Salz und Pfeffer würzen.<br>
-                    <br>
-                    Einkochen: Ohne Deckel mindestens 30 Minuten köcheln lassen, bis die Sauce dickflüssig ist.<br>
-                    <br>
-                    Ein kleiner Koch-Tipp: Wenn du das Tomatenmark richtig dunkel anröstest (bevor die Tomaten
-                    reinkommen),<br>
-                    bekommt die Sauce eine viel kräftigere Farbe und mehr Tiefe.<br>
-                </li><br>
-                <br>
-                <li>
-                    Béchamelsauce:<br>
-                    <br>
-                    Anschwitzen: Butter schmelzen, Mehl einrühren und hellgelb anschwitzen<br>
-                    <br>
-                    Aufgießen: Milch dazugeben und glatt rühren. (Tipp: Bei Klümpchen die Sauce einfach durch ein Sieb
-                    gießen).<br>
-                    <br>
-                    Köcheln: Sauce ca. 30 Minuten auf kleiner Flamme köcheln lassen, um den Mehlgeschmack zu
-                    entfernen.<br>
-                    <br>
-                    Abschmecken: Mit Salz, Pfeffer, Zitronensaft und Muskatnuss verfeinern.<br>
-                    <br>
-                    Ein kleiner Koch-Tipp: Gieße die Milch am besten nach und nach dazu und rühre nach jedem Schluck
-                    ordentlich um<br>
-                    so entstehen erst gar keine Klümpchen!<br>
-                </li><br>
-                <br>
-                <li>Zubereitung:<br>
-                    <br>
-                   Boden: Eine Auflaufform buttern und den Boden mit etwas Ragú bedecken.<br>
-                   <br>
-                   Schichten: Abwechselnd Lasagneplatten, Ragú und Béchamel übereinander schichten.<br>
-                   <br>
-                   Abschluss: Die letzte Schicht muss aus Béchamelsauce bestehen.<br>
-                   <br>
-                   Topping: Großzügig mit geriebenem Käse bestreuen und Butterflöckchen darauf verteilen.<br>
-                   <br>
-                   Ein kleiner Koch-Tipp: Achte darauf, dass die oberste Nudelschicht komplett mit Béchamel<br>
-                    bedeckt ist, damit sie im Ofen nicht hart und trocken wird.<br>
-                </li><br>
-                <br>
-                <li>Die Lasagne im heißen Backofen bei 180 °C Umluft ca. 30 - 40 Minuten backen,<br>
-                    bis die Kruste goldbraun ist.</li>
-            </ol>
-        </article>
-        <section id="author-recept">
-            <h3>Rezept erstellt von</h3>
-            <div class="author-recept-container">
-                <img class="author-recept-img" src="img/david.jpg" alt="Image of David">
-               <p class="p-size-bigger">David</p>
-            </div>
-        </section>
+        <table class="table-ingredients">
+          <h3 class="caption">Außerdem:</h3>
+          <tr class="grey-row">
+            <td class="td-padding"></td>
+            <td>Fett (für die Form)</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding">75 g</td>
+            <td>Lasagneplatte(n)</td>
+          </tr>
+          <tr class="grey-row">
+            <td class="td-padding">n. B.</td>
+            <td>Käse, geriebener</td>
+          </tr>
+          <tr class="white-row">
+            <td class="td-padding"></td>
+            <td>Butterflöckchen</td>
+          </tr>
+        </table>
+      </section>
+      <section id="preparation">
+        <h2 class="mobile-h2">Zubereitung</h2>
+        <div class="mobile-preparation-btn">
+          <button class="time-btn">
+            <img
+              class="icons-time-difficult-date"
+              src="img/icons/clock-regular.svg"
+              alt="clock"
+            />
+            1 Std. 40 Min.
+            <p class="font-light">Gesamtzeit</p>
+          </button>
+          <button class="time-btn">
+            <img
+              class="icons-time-difficult-date"
+              src="img/icons/clock-regular.svg"
+              alt="clock"
+            />
+            30 Min.
+            <p class="font-light">Arbeitszeit</p>
+          </button>
+          <button class="time-btn">
+            <img
+              class="icons-time-difficult-date"
+              src="img/icons/clock-regular.svg"
+              alt="clock"
+            />
+            1 Std. 10 Min.
+            <p class="font-light">Koch-/Backzeit</p>
+          </button>
+        </div>
+      </section>
+      <article class="preparation-container">
+        <ol>
+          <li>
+            Bolognese: <br />
+            <br />
+            Anbraten: Hackfleisch in Olivenöl scharf anbraten. Zwiebeln und
+            Petersilie kurz mitdünsten.<br />
+            <br />
+            Würzen: Knoblauchscheiben und Tomatenmark einrühren und kurz
+            mitrösten.<br />
+            <br />
+            Ablöschen: Dosentomaten (und optional Rotwein) dazugeben. Mit Salz
+            und Pfeffer würzen.<br />
+            <br />
+            Einkochen: Ohne Deckel mindestens 30 Minuten köcheln lassen, bis die
+            Sauce dickflüssig ist.<br />
+            <br />
+            Ein kleiner Koch-Tipp: Wenn du das Tomatenmark richtig dunkel
+            anröstest (bevor die Tomaten reinkommen),<br />
+            bekommt die Sauce eine viel kräftigere Farbe und mehr Tiefe.<br />
+          </li>
+          <br />
+          <br />
+          <li>
+            Béchamelsauce:<br />
+            <br />
+            Anschwitzen: Butter schmelzen, Mehl einrühren und hellgelb
+            anschwitzen<br />
+            <br />
+            Aufgießen: Milch dazugeben und glatt rühren. (Tipp: Bei Klümpchen
+            die Sauce einfach durch ein Sieb gießen).<br />
+            <br />
+            Köcheln: Sauce ca. 30 Minuten auf kleiner Flamme köcheln lassen, um
+            den Mehlgeschmack zu entfernen.<br />
+            <br />
+            Abschmecken: Mit Salz, Pfeffer, Zitronensaft und Muskatnuss
+            verfeinern.<br />
+            <br />
+            Ein kleiner Koch-Tipp: Gieße die Milch am besten nach und nach dazu
+            und rühre nach jedem Schluck ordentlich um<br />
+            so entstehen erst gar keine Klümpchen!<br />
+          </li>
+          <br />
+          <br />
+          <li>
+            Zubereitung:<br />
+            <br />
+            Boden: Eine Auflaufform buttern und den Boden mit etwas Ragú
+            bedecken.<br />
+            <br />
+            Schichten: Abwechselnd Lasagneplatten, Ragú und Béchamel
+            übereinander schichten.<br />
+            <br />
+            Abschluss: Die letzte Schicht muss aus Béchamelsauce bestehen.<br />
+            <br />
+            Topping: Großzügig mit geriebenem Käse bestreuen und Butterflöckchen
+            darauf verteilen.<br />
+            <br />
+            Ein kleiner Koch-Tipp: Achte darauf, dass die oberste Nudelschicht
+            komplett mit Béchamel<br />
+            bedeckt ist, damit sie im Ofen nicht hart und trocken wird.<br />
+          </li>
+          <br />
+          <br />
+          <li>
+            Die Lasagne im heißen Backofen bei 180 °C Umluft ca. 30 - 40 Minuten
+            backen,<br />
+            bis die Kruste goldbraun ist.
+          </li>
+        </ol>
+      </article>
+      <section id="author-recept">
+        <h3>Rezept erstellt von</h3>
+        <div class="author-recept-container">
+          <img
+            class="author-recept-img"
+            src="img/david.jpg"
+            alt="Image of David"
+          />
+          <p class="p-size-bigger">David</p>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer-container">
-
-        </div>
+      <div class="footer-container"></div>
     </footer>
-
-
-
-</body>
-
+  </body>
 </html>
