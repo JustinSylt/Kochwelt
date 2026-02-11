@@ -1,0 +1,43 @@
+
+.header{
+    display: flex;
+    height: 128px;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: raleway;
+}
+
+
+.logo_header{
+    margin-left: 230px;
+    display: flex;
+    height: 112px;
+}
+
+.navigation{
+    display: flex;
+    margin-right: 230px;
+    gap: 20px;
+    height: fit-content;
+    margin-top: 88px;
+    
+}
+
+.navbutton{
+    background: none;
+    border: none;
+    font-size: 24px;
+    height: fit-content;
+    color: black;
+    text-decoration: none;
+}  
+
+.navbutton:hover{
+    color: #008000;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    cursor: pointer;
+    text-decoration-thickness: 4px;
+    
+}
