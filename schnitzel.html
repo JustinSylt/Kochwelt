@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./schnitzel.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/fav_icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Schnitzel</title>
+    <script
+      src="./schnitzel.js"
+      defer
+    ></script>
+    <script src="./schnitzel.js" defer></script>
+  </head>
+  <body>
+    <header>
+      
+ 
+<div class="header">
+<a href="header.html">  <img src="./logo.png" alt="Logo-Kochwelt" class="logo_header"></a>
+  <div class="navigation">
+    <a href="index.html" class="navbutton">Start</a>
+    <a href="rezept_des_tages.html" class="navbutton">Rezept des Tages</a>
+    <a href="kontakt.html" class="navbutton">Kontakt</a>
+    <a href="impressum.html" class="navbutton">Impressum</a>
+  </div>
+</div>
+
+    
+
+    </header>
+    <main>
+      <section id="heading">
+        <h1>Schnitzel Wiener Art</h1>
+        <img
+          src="./img/Schnitzel.png"
+          alt=""
+          id="header-img"
+        />
+        <div id="time-and-date">
+          <div class="time-container">
+            <img
+              src="../img/icons/clock-regular.svg"
+              alt=""
+              class="time-container-img"
+            />
+            <p>30 Min.</p>
+          </div>
+          <div class="time-container">
+            <img
+              src="../img/icons/brain-solid.svg"
+              alt=""
+              class="time-container-img"
+            />
+            <p>medium</p>
+          </div>
+          <div class="time-container">
+            <img
+              src="../img/icons/calendar-alt-regular.svg"
+              alt=""
+              class="time-container-img"
+            />
+            <p>08.02.2026</p>
+          </div>
+        </div>
+      </section>
+      <section id="zutaten">
+        <div id="portion-container">
+          <p>Zutaten für</p>
+          <input
+            type="number"
+            max="16"
+            min="1"
+            value="1"
+            id="portion-value"
+          />
+          <button onclick="calculatePortions()">Schnitzel</button>
+        </div>
+        <table>
+          <tr class="row-1">
+            <td
+              class="portion-size"
+              id="schnitzel-count"
+            >
+              1
+            </td>
+            <td>dünne Schnitzel (ca. 0,5cm dick)</td>
+          </tr>
+          <tr>
+            <td
+              class="portion-size"
+              id="breading-count"
+            >
+              40
+            </td>
+            <td>g Paniermehl</td>
+          </tr>
+          <tr class="row-1">
+            <td
+              class="portion-size"
+              id="flour-count"
+            >
+              20
+            </td>
+            <td>g Weizenmehl</td>
+          </tr>
+          <tr>
+            <td
+              class="portion-size"
+              id="butter-count"
+            >
+              40
+            </td>
+            <td>g Butterschmalz</td>
+          </tr>
+          <tr class="row-1">
+            <td
+              class="portion-size"
+              id="egg-count"
+            >
+              1
+            </td>
+            <td>Eier größe M</td>
+          </tr>
+          <tr>
+            <td
+              class="portion-size"
+              style="padding: 24px"
+            ></td>
+            <td>beliebig viel Pfeffer</td>
+          </tr>
+          <tr class="row-1">
+            <td
+              class="portion-size"
+              style="padding: 24px"
+            ></td>
+            <td>Ausreichend Pflanzenöl</td>
+          </tr>
+        </table>
+      </section>
+      <section id="zubereitung">
+        <h2>Zubereitung</h2>
+        <div id="container-for-time">
+          <img
+            src="../img/icons/clock-regular.svg"
+            alt=""
+            class="time-container-img"
+          />
+          <p>ca. 30 Minuten</p>
+        </div>
+        <div id="zubereitung-container">
+          <p>
+            Panierstraße vorbereiten: Drei tiefe Teller bereitstellen - im
+            ersten Mehl, im zweiten verquirlte Eier mit etwas Pfeffer, im
+            dritten Paniermehl.
+          </p>
+          <br />
+          <p>
+            Schnitzel würzen: Schnitzel auf beiden Seiten mit Pfeffer würzen
+            (kein Salz vor dem Panieren, sonst wird's zäh).
+          </p>
+          <br />
+          <p>
+            Panieren: Schnitzel erst in Mehl wenden (überschüssiges abklopfen),
+            dann durch die Eier ziehen, zum Schluss gleichmäßig im Paniermehl
+            wenden und leicht andrücken.
+          </p>
+          <br />
+          <p>
+            Fett erhitzen: Olivenöl und Butterschmalz in einer großen Pfanne
+            erhitzen (Verhältnis etwa 1:1, Fett sollte ca. 1 cm hoch stehen).
+            Richtige Temperatur: Ein Holzlöffel im Fett bildet kleine Bläschen.
+          </p>
+          <br />
+          <p>
+            Braten: Schnitzel vorsichtig einlegen und bei mittlerer bis hoher
+            Hitze goldbraun braten (ca. 3-4 Minuten pro Seite). Pfanne dabei
+            leicht schwenken, damit das Schnitzel "schwimmt" und die Panade
+            schön wellig wird.
+          </p>
+          <br />
+          <p>
+            Abtropfen lassen: Fertige Schnitzel kurz auf Küchenpapier abtropfen
+            lassen und sofort servieren.
+          </p>
+        </div>
+      </section>
+      <section id="made-by">
+        <h2>Rezept erstellt von</h2>
+        <div id="made-by-picture-and-name">
+          <img
+            src="./justin_dohmen_profile.jpg"
+            alt=""
+          />
+          <h3>Justin Dohmen</h2>
+        </div>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
