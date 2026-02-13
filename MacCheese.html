@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Cheese.css">
     <script src="function.js"></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="header">
+<a href="header.html">  <img src="./logo.png" alt="Logo-Kochwelt" class="logo_header"></a>
+  <div class="navigation">
+    <a href="start.html" class="navbutton">Start</a>
+    <a href="rezept_des_tages.html" class="navbutton">Rezept des Tages</a>
+    <a href="kontakt.html" class="navbutton">Kontakt</a>
+    <a href="impressum.html" class="navbutton">Impressum</a>
+  </div>
+</div>
+    </header>
     <main>
         <section class="headline">
             <div>
@@ -20,13 +30,27 @@
             </div>
             <div></div>
         </section>
-        <section class="items">
-            <div>
+        <section class="recipe">
+            <div class="math">
+                <p>Zutaten für:</p>
                 <input type="number">
                 <button id="multi">Portionen</button>
             </div>
             <div>
-                
+                <table class="items">
+                    <td>
+                    <tr>500g Makkaroni</tr>
+                    </td>
+                     <td>
+                    <tr>250g Parmesan</tr>
+                    </td>
+                     <td>
+                    <tr>250g Cheddar</tr>
+                    </td>
+                     <td>
+                    <tr>100ml Sahne</tr>
+                    </td>
+                </table>
             </div>
         </section>
     </main>

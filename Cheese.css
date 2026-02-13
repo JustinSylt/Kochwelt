@@ -1,0 +1,22 @@
+button {
+    background-color: green;
+    color: white;
+}
+
+#cheesse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.math {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
