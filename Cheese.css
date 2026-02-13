@@ -1,9 +1,19 @@
 button {
     background-color: green;
     color: white;
+    border: none;
+
 }
 
-#cheesse {
+td {
+    padding: 24px;
+}
+
+tr {
+    padding: 32px;
+}
+
+#cheese {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,12 +21,52 @@ button {
 
 .math {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .items {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.tr_grey {
+    background-color: rgb(184, 177, 177);
+}
+
+.step {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 120px;
+}
+
+.step h2 {
+    text-align: center;
+}
+
+.time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.pro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
