@@ -192,23 +192,3 @@ p{
     
 
 
-/*
-
-@media(max-width: 1200px){
-    .logo_header{
-        display: none !important;
-    }
-
-    .logo_header_small{
-        display: block !important;
-    }
-}
-
-
-@media(min-width: 1200px){
-    .logo_header_small{
-        display: none;
-    }
-}
-
-*/
