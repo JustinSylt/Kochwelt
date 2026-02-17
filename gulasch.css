@@ -192,16 +192,7 @@ p{
     
 
 
-@media(max-width: 1400px){
-
-    .navbutton{
-        font-size: 18px !important;
-    }
-
-    .logo_header{
-        height: 90px !important
-    }
-}
+/*
 
 @media(max-width: 1200px){
     .logo_header{
@@ -212,3 +203,12 @@ p{
         display: block !important;
     }
 }
+
+
+@media(min-width: 1200px){
+    .logo_header_small{
+        display: none;
+    }
+}
+
+*/
