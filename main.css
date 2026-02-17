@@ -20,9 +20,6 @@ p {
 	font-size: 18px;
 }
 
-header {
-	height: 8vh;
-}
 
 
 
@@ -200,4 +197,24 @@ footer {
     background-color: dimgray;
     height: 250px;
     width: 100%;
+}
+/* media query header*/
+  @media(max-width: 1400px){
+
+    .navbutton{
+        font-size: 18px !important;
+    }
+
+    .logo_header{
+        height: 90px !important;
+    }
+    .navigation{
+      margin-top: 92px !important;
+    }
+}
+
+@media(max-width: 1000px){
+  .logo-header-small{
+    display: block;
+  }
 }
