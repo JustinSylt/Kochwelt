@@ -18,7 +18,7 @@ function calculatePortions() {
   // count of eggs needed
   let egg_count = 1;
 
-  // maximaler input wert
+  // maximaler und minimaler input wert
   let max_value = 20;
 
   let min_value = 1;
