@@ -255,9 +255,9 @@ p {
 }
 
 .author-recept-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;   
 }
 
 .p-size-bigger {
@@ -332,6 +332,13 @@ p {
     object-fit: contain;
     padding-top: 60px;
 }
+
+.author-recept-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;   
+}
+
 
     .mybody {
         font-size: 14px;
