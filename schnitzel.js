@@ -1,7 +1,6 @@
 function calculatePortions() {
   // get number of portions wanted
   let number_of_schnitzel = document.getElementById('portion-value').value;
-  number_of_schnitzel = parseInt(number_of_schnitzel, 10);
 
   // get elements of each td
   // count of schnitzel needed
@@ -19,18 +18,37 @@ function calculatePortions() {
   // count of eggs needed
   let egg_count = 1;
 
-  document.getElementById('schnitzel-count').innerHTML =
-    number_of_schnitzel * schnitzel_count;
+  // maximaler input wert
+  let max_value = 20;
 
-  document.getElementById('breading-count').innerHTML =
-    number_of_schnitzel * breading_count;
+  if (number_of_schnitzel == '') {
+    document.getElementById('schnitzel-count').innerHTML = schnitzel_count;
+    document.getElementById('breading-count').innerHTML = breading_count;
+    document.getElementById('flour-count').innerHTML = flour_count;
+    document.getElementById('butter-count').innerHTML = butter_count;
+    document.getElementById('egg-count').innerHTML = egg_count;
+  } else {
+    if (number_of_schnitzel > max_value) {
+      document.getElementById('portion-value').value = 20;
+      alert('Die maximale Anzahl an Portionen ist: ' + max_value);
+    } else {
+      number_of_schnitzel = parseInt(number_of_schnitzel, 10);
 
-  document.getElementById('flour-count').innerHTML =
-    number_of_schnitzel * flour_count;
+      document.getElementById('schnitzel-count').innerHTML =
+        number_of_schnitzel * schnitzel_count;
 
-  document.getElementById('butter-count').innerHTML =
-    number_of_schnitzel * butter_count;
+      document.getElementById('breading-count').innerHTML =
+        number_of_schnitzel * breading_count;
 
-  document.getElementById('egg-count').innerHTML =
-    number_of_schnitzel * egg_count;
+      document.getElementById('flour-count').innerHTML =
+        number_of_schnitzel * flour_count;
+
+      document.getElementById('butter-count').innerHTML =
+        number_of_schnitzel * butter_count;
+
+      document.getElementById('egg-count').innerHTML =
+        number_of_schnitzel * egg_count;
+      w;
+    }
+  }
 }
