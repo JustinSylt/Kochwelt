@@ -21,16 +21,25 @@ function calculatePortions() {
   // maximaler input wert
   let max_value = 20;
 
+  let min_value = 1;
+
   if (number_of_schnitzel == '') {
+    document.getElementById('portion-value').value = 1;
     document.getElementById('schnitzel-count').innerHTML = schnitzel_count;
     document.getElementById('breading-count').innerHTML = breading_count;
     document.getElementById('flour-count').innerHTML = flour_count;
     document.getElementById('butter-count').innerHTML = butter_count;
     document.getElementById('egg-count').innerHTML = egg_count;
   } else {
-    if (number_of_schnitzel > max_value) {
-      document.getElementById('portion-value').value = 20;
-      alert('Die maximale Anzahl an Portionen ist: ' + max_value);
+    if (number_of_schnitzel > max_value || number_of_schnitzel < min_value) {
+      document.getElementById('portion-value').value = 1;
+      alert(
+        'Die Anzahl der Portionen darf nicht größer als ' +
+          max_value +
+          ' sein und nicht kleiner als ' +
+          min_value +
+          ' sein',
+      );
     } else {
       number_of_schnitzel = parseInt(number_of_schnitzel, 10);
 
@@ -48,7 +57,6 @@ function calculatePortions() {
 
       document.getElementById('egg-count').innerHTML =
         number_of_schnitzel * egg_count;
-      w;
     }
   }
 }
