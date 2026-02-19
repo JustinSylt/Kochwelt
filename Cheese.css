@@ -2,45 +2,69 @@ button {
     background-color: green;
     color: white;
     border: none;
-
+    height: 32px;
+    width: 120px;
+    font-size: 16px;
 }
 
-td {
-    padding: 24px;
+table {
+    border-collapse: collapse;
+    width: 1000px;
 }
+
 
 tr {
     padding: 32px;
 }
 
-#cheese {
+.headline {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+#cheese {
+    width: 800px;
+    height: 400px;
+}
+
+.recipe {
+    padding: 0px 128px;
 }
 
 .math {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .items {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     
 }
 
 .tr_grey {
-    background-color: rgb(184, 177, 177);
+    background-color: lightgray;
+    
 }
+
+.portion_size {
+    width: 32px;
+    padding: 24px 0px 24px 24px;
+}
+
+.product_description {
+    padding: 24px 24px 24px 0px;
+}
+    
 
 .step {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    padding: 120px 128px 0px 128px;
 }
 
 .step h2 {
@@ -49,16 +73,28 @@ tr {
 
 .time {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
+    
+}
+
+.cook_time {
+    background-color: lightgray;
+    padding: 8px;
+    margin-right: 16px;
+}
+
+.all_time {
+    background-color: lightgray;
+    padding: 8px;
 }
 
 .user {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    align-items: flex-start;
+    padding: 20px 120px 120px 120px;
 }
 .pro {
     display: flex;

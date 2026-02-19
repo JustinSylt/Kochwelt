@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kochwelt</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="Cheese.css">
+    <link rel="stylesheet" href="header.css">
     <script src="function.js"></script>
 </head>
 <body>
@@ -33,26 +34,52 @@
         <section class="recipe">
             <div class="math">
                 <p>Zutaten für:</p>
-                <input type="number">
-                <button id="multi">Portionen</button>
+                <input id="input" class="input_field" type="number" min="-1" max="20" value="1">
+                <button id="multi" onclick="calculatePortion()">Portionen</button>
             </div>
             <div>
-                <table class="items">
-                    <td>
-                    <tr>500g Makkaroni</tr>
-                    </td>
-                     <td>
-                    <tr>250g Parmesan</tr>
-                    </td>
-                     <td>
-                    <tr>250g Cheddar</tr>
-                    </td>
-                     <td>
-                    <tr>100ml Sahne</tr>
-                    </td>
+                <table class="items"> 
+                    <tr>
+                    <td id="makkaroni" class="portion_size">500</td>
+                    <td class="product_description">g Makkaroni</td>
+                    </tr>
+                     <tr class="tr_grey">
+                    <td id="parmesan" class="portion_size">250</td>
+                    <td class="product_description">g Parmesan</td>
+                    </tr>
+                     <tr>
+                    <td id="cheddar" class="portion_size">250</td>
+                    <td class="product_description">g Cheddar</td>
+                    </tr>
+                     <tr class="tr_grey">
+                    <td id="sahne" class="portion_size">100</td>
+                    <td class="product_description">ml Sahne</td>
+                    </tr>
                 </table>
             </div>
         </section>
+        <section class="step">
+            <div>
+                <h2>Zubereitung:</h2>
+                <div class="time">
+                <p class="cook_time">ca. 15 Minuten</p> 
+                <p class="all_time">Gesamtzeit ca 15 Minuten</p>
+                </div>
+                <div>
+                    <p>Die Makkaroni in einem großen Topf mit Salzwasser al dente kochen. Anschließend abgießen und beiseitestellen.</p>
+                    <p>In einem separaten Topf die Sahne erhitzen, aber nicht zum Kochen bringen.
+                      Den geriebenen Cheddar und Parmesan hinzufügen und unter ständigem Rühren schmelzen lassen, bis eine glatte Käsesauce entsteht.</p>
+                    <p>Die gekochten Makkaroni zur Käsesauce geben und gut vermengen, sodass alle Nudeln gleichmäßig mit der Sauce bedeckt sind.</p>
+                    </div>
+        </section>
+        <section class="user">
+            <p>Rezept erstellt von</p>
+            <div class="pro">
+            <img class="profile" src="./img/profile.png">
+            <p>Fabio</p>
+            </div>
+        </section>
     </main>
+    <footer></footer>
 </body>
 </html>
