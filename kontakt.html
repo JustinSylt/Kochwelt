@@ -11,17 +11,18 @@
 <body>
 
     <div class="header">
-        <a href="header.html">
+        <a href="index.html">
             <img src="./logo.png" alt="Logo-Kochwelt" class="logo_header">
         </a>
         <div class="navigation">
-            <a href="start.html" class="navbutton">Start</a>
+            <a href="index.html" class="navbutton">Start</a>
             <a href="rezept_des_tages.html" class="navbutton">Rezept des Tages</a>
             <a href="kontakt.html" class="navbutton">Kontakt</a>
             <a href="impressum.html" class="navbutton">Impressum</a>
         </div>
     </div>
 
+    
 <div class="kontakt_feld">
     <h2>Kontaktiere uns</h2>
 
@@ -32,9 +33,11 @@
     <input name="deine Email" type="text" class="basic_style">
 
     <p class="margin_bottom_0">Deine Nachricht:</p>
-    <textarea class="basic_style deine_nachricht_height"></textarea>
+    <textarea class="basic_style deine_nachricht_height">Ihre Nachricht...</textarea>
 
-    <button class="abschicken">Abschicken</button>
+    <form action="mailto:mauch.benaja@gmx.de" method="post" enctype="text/plain">
+    <button type="submit" class="abschicken">Abschicken</button>
+</form>
 </div>
 
 </body>

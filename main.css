@@ -184,6 +184,8 @@ header {
   }
 }
 /* End of: Lust auf was neues Section */
+
+/* Begin of: Content Pfanne vs Wok & Footer */
 #section_subheader {
   display: flex;
   justify-content: space-around;
@@ -195,9 +197,14 @@ header {
   display: flex;
   justify-content: center;
 }
+#wok_img {
+  height: 256px;
+  width: 256px;
+}
 
 footer {
     background-color: dimgray;
     height: 250px;
     width: 100%;
 }
+/* End of: Content Pfanne vs Wok & Footer */
