@@ -340,9 +340,7 @@ p {
 }
 
 
-    .mybody {
-        font-size: 14px;
-    }
+  
 }
 
 @media (max-width: 600px) {
@@ -384,10 +382,10 @@ p {
     }
 
     .mybody {
-        font-size: 16px;
+        font-size: 14px;
     }
 
-    .p {
+    p {
         font-size: 14px;
     }
 
