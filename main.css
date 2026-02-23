@@ -186,11 +186,18 @@ header {
 /* End of: Lust auf was neues Section */
 
 /* Begin of: Content Pfanne vs Wok & Footer */
+#wok_vs_pfanne {
+  padding-left: 128px;
+  padding-right: 128px;
+  padding-top: 32px;
+  padding-bottom: 100px;
+}
+
 #section_subheader {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 32px 32px 32px 32px;
+  padding: 32px 32px 32px 32px;
 }
 
 #section_header {
@@ -200,6 +207,8 @@ header {
 #wok_img {
   height: 256px;
   width: 256px;
+  border-radius: 12px;
+  padding-left: 24px;
 }
 
 footer {
