@@ -1,3 +1,8 @@
+input {
+    height: 26px;
+    text-align: left;
+}
+
 button {
     background-color: green;
     color: white;
@@ -9,7 +14,7 @@ button {
 
 table {
     border-collapse: collapse;
-    width: 1000px;
+    width: 100%;
 }
 
 
@@ -25,9 +30,27 @@ tr {
     margin-top: 120px;
 }
 
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    margin-top: 16px;
+}
+
+.info p {
+    background-color: lightgray;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
 #cheese {
-    width: 800px;
+    width: 1280px;
     height: 400px;
+    border-radius: 16px;
 }
 
 .recipe {
@@ -99,10 +122,31 @@ tr {
 .pro {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
 }
 
 .profile {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}
+
+@media (max-width: 1280px) {
+    .headline {
+        padding: 0px 16px;
+    }
+
+    #cheese {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 780px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+
 }
