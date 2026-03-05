@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
     margin: 0;
     min-height: 100vh;
     font-family: raleway;
@@ -65,4 +65,12 @@ p{
 
 .deine_nachricht_height{
     height: 180px;
+
+}
+
+@media(max-width:600px){
+
+    .kontakt_feld{
+        width: 350px;
+    }
 }
