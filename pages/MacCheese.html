@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/Cheese.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link
+      rel="shortcut icon"
+      href="../img/fav_icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../scripts/function.js" defer></script>
+</head>
+<body>
+    <header>
+      <a href="../index.html"
+        ><img
+          src="../img/logo.png"
+          alt="Kochwelt logo"
+      /></a>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+      />
+      <label
+        for="menu-toggle"
+        class="burger"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul>
+        <li>
+          <a
+            href="../index.html"
+            >Start</a
+          >
+          <div
+            class="link-underline"
+            
+          ></div>
+        </li>
+        <li>
+          <a href="../pages/david_recip.html">Rezept des Tages</a>
+          <div class="link-underline" ></div>
+        </li>
+        <li>
+          <a href="../pages/kontakt.html">Kontakt</a>
+          <div class="link-underline"></div>
+        </li>
+        <li>
+          <a href="../pages/impressum.html">Impressum</a>
+          <div class="link-underline"></div>
+        </li>
+      </ul>
+    </header>
+    <main>
+        <section class="headline">
+            <div>
+                <h1>Mac and Cheese</h1>
+            </div>
+            <div>
+                <img id="cheese" src="../img/chesse.jpg" alt="Mac and Cheese">
+                <div class="info">
+                <p><img class="icon" src="../img/icons/clock-regular.svg" alt="Clock"> 15 Minuten</p>
+                <p><img class="icon" src="../img/icons/brain-solid.svg" alt="brain"> simple</p>
+                <p><img class="icon" src="../img/icons/calendar-alt-regular.svg" alt="calander"> 22.02.2025</p>
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <section class="recipe">
+            <div class="math">
+                <p>Zutaten für: </p>
+                <input id="input" class="input_field" type="number" min="-1" max="20" value="1">
+                <button id="multi" onclick="calculatePortion()">Portionen</button>
+            </div>
+            <div>
+                <table class="items"> 
+                    <tr>
+                    <td id="makkaroni" class="portion_size">500</td>
+                    <td class="product_description">g Makkaroni</td>
+                    </tr>
+                     <tr class="tr_grey">
+                    <td id="parmesan" class="portion_size">250</td>
+                    <td class="product_description">g Parmesan</td>
+                    </tr>
+                     <tr>
+                    <td id="cheddar" class="portion_size">250</td>
+                    <td class="product_description">g Cheddar</td>
+                    </tr>
+                     <tr class="tr_grey">
+                    <td id="sahne" class="portion_size">100</td>
+                    <td class="product_description">ml Sahne</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="step">
+            <div>
+                <h2>Zubereitung:</h2>
+                <div class="time">
+                <p class="cook_time"><img class="icon" src="../img/icons/clock-regular.svg" alt="Clock">ca. 15 Minuten</p> 
+                <p class="all_time"><img class="icon" src="../img/icons/clock-regular.svg" alt="Clock">Gesamtzeit ca 15 Minuten</p>
+                </div>
+                <div>
+                    <p>Die Makkaroni in einem großen Topf mit Salzwasser al dente kochen. Anschließend abgießen und beiseitestellen.</p>
+                    <p>In einem separaten Topf die Sahne erhitzen, aber nicht zum Kochen bringen.
+                      Den geriebenen Cheddar und Parmesan hinzufügen und unter ständigem Rühren schmelzen lassen, bis eine glatte Käsesauce entsteht.</p>
+                    <p>Die gekochten Makkaroni zur Käsesauce geben und gut vermengen, sodass alle Nudeln gleichmäßig mit der Sauce bedeckt sind.</p>
+                    </div>
+        </section>
+        <section class="user">
+            <p>Rezept erstellt von</p>
+            <div class="pro">
+            <img class="profile" src="../img/profile.png">
+            <p>Fabio</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <a href="">
+        <img
+          id="footer-logo"
+          src="../img/logo.png"
+          alt="logo image" />
+        <img
+          id="footer-logo-small"
+          src="../img/logo_small.png"
+          alt=""
+      /></a>
+      <div class="social-container">
+        <a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="../img/instagram.png"
+            alt=""
+            class="footer-social-img" /></a
+        ><a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="../img/twitter.png"
+            alt=""
+            class="footer-social-img" /></a
+        ><a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="../img/linkedin.png"
+            alt=""
+            class="footer-social-img"
+        /></a>
+      </div>
+    </footer>
+</body>
+</html>

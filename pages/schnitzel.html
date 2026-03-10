@@ -21,50 +21,70 @@
     />
     <link
       rel="stylesheet"
-      href="./main.css"
+      href="../styles/schnitzel.css"
     />
     <link
       rel="stylesheet"
-      href="./header.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./schnitzel.css"
+      href="../styles/header.css"
     />
     <link
       rel="shortcut icon"
       href="../img/fav_icon/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="../styles/footer.css">
     <title>Schnitzel</title>
-    <script
-      src="./schnitzel.js"
-      defer
-    ></script>
-    <script src="./schnitzel.js" defer></script>
+    <script src="../scripts/schnitzel.js" defer></script>
   </head>
   <body>
     <header>
-      
- 
-<div class="header">
-<a href="header.html">  <img src="./logo.png" alt="Logo-Kochwelt" class="logo_header"></a>
-  <div class="navigation">
-    <a href="index.html" class="navbutton">Start</a>
-    <a href="rezept_des_tages.html" class="navbutton">Rezept des Tages</a>
-    <a href="kontakt.html" class="navbutton">Kontakt</a>
-    <a href="impressum.html" class="navbutton">Impressum</a>
-  </div>
-</div>
-
-    
-
+      <a href="../index.html"
+        ><img
+          src="../img/logo.png"
+          alt="Kochwelt logo"
+      /></a>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+      />
+      <label
+        for="menu-toggle"
+        class="burger"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul>
+        <li>
+          <a
+            href="../index.html"
+            >Start</a
+          >
+          <div
+            class="link-underline"
+            
+          ></div>
+        </li>
+        <li>
+          <a href="../pages/david_recip.html">Rezept des Tages</a>
+          <div class="link-underline" ></div>
+        </li>
+        <li>
+          <a href="../pages/kontakt.html">Kontakt</a>
+          <div class="link-underline"></div>
+        </li>
+        <li>
+          <a href="../pages/impressum.html">Impressum</a>
+          <div class="link-underline"></div>
+        </li>
+      </ul>
     </header>
     <main>
       <section id="heading">
         <h1>Schnitzel Wiener Art</h1>
         <img
-          src="./img/Schnitzel.png"
+          src="../img/Schnitzel.png"
           alt=""
           id="header-img"
         />
@@ -220,7 +240,7 @@
         <h2>Rezept erstellt von</h2>
         <div id="made-by-picture-and-name">
           <img
-            src="./justin_dohmen_profile.jpg"
+            src="../img/justin_dohmen_profile.jpg"
             alt=""
           />
           <h3>Justin Dohmen</h2>
@@ -228,6 +248,40 @@
       </section>
     </main>
     <footer>
+      <a href="">
+        <img
+          id="footer-logo"
+          src="../img/logo.png"
+          alt="logo image" />
+        <img
+          id="footer-logo-small"
+          src="../img/logo_small.png"
+          alt=""
+      /></a>
+      <div class="social-container">
+        <a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="../img/instagram.png"
+            alt=""
+            class="footer-social-img" /></a
+        ><a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="../img/twitter.png"
+            alt=""
+            class="footer-social-img" /></a
+        ><a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="../img/linkedin.png"
+            alt=""
+            class="footer-social-img"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>
