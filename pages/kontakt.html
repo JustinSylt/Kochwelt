@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Kontakt - Kochwelt</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/kontakt.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/fav_icon/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"
+        ><img
+          src="../img/logo.png"
+          alt="Kochwelt logo"
+      /></a>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+      />
+      <label
+        for="menu-toggle"
+        class="burger"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul>
+        <li>
+          <a href="../index.html">Start</a>
+          <div class="link-underline"></div>
+        </li>
+        <li>
+          <a href="./david_recip.html">Rezept des Tages</a>
+          <div class="link-underline"></div>
+        </li>
+        <li>
+          <a
+            href="./kontakt.html"
+            id="active-link"
+            >Kontakt</a
+          >
+          <div
+            class="link-underline"
+            id="active-link-underline"
+          ></div>
+        </li>
+        <li>
+          <a href="./impressum.html">Impressum</a>
+          <div class="link-underline"></div>
+        </li>
+      </ul>
+    </header>
+
+    <div class="kontakt_feld">
+      <h2>Kontaktiere uns</h2>
+
+      <p class="margin_bottom_0">Dein Name:</p>
+      <input
+        name="Dein Name"
+        type="text"
+        class="basic_style"
+      />
+
+      <p class="margin_bottom_0">Deine Email:</p>
+      <input
+        name="deine Email"
+        type="text"
+        class="basic_style"
+      />
+
+      <p class="margin_bottom_0">Deine Nachricht:</p>
+      <textarea class="basic_style deine_nachricht_height">
+Ihre Nachricht...</textarea
+      >
+
+      <form
+        action="mailto:mauch.benaja@gmx.de"
+        method="post"
+        enctype="text/plain"
+      >
+        <button
+          type="submit"
+          class="abschicken"
+        >
+          Abschicken
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
