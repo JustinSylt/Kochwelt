@@ -25,7 +25,7 @@ function getinputvalue() {
     } else {
         anzahl_portionen = parseFloat(anzahl_portionen);
 
-        // Berechnung + Rundung auf 2 Stellen + Komma statt Punkt
+        // Berechnung + Rundung auf 2 Stellen
         updateAmount('butterschmalz-count', anzahl_portionen * butterschmalz_count);
         updateAmount('zwiebel-count', anzahl_portionen * zwiebel_count);
         updateAmount('tomatenmark-count', anzahl_portionen * tomatenmark_count);
@@ -40,9 +40,8 @@ function getinputvalue() {
     }
 }
 
-// Hilfsfunktion, um den Code oben kürzer zu halten
+// Hilfsfunktion
 function updateAmount(id, value) {
-    // toFixed(2) macht max 2 Nachkommastellen
-    // replace('.', ',') macht aus dem Punkt ein deutsches Komma
+   
     document.getElementById(id).innerHTML = value.toFixed(2).replace('.', ',');
 }
