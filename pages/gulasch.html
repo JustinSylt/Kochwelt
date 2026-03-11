@@ -4,67 +4,78 @@
     <meta charset="UTF-8"><meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
     <title>Gulasch</title>
-    <link rel="stylesheet" href="gulasch.css">
-    <link rel="stylesheet" href="header.css">
-    <script src="benaja_recipe.js"></script>
+    <link rel="stylesheet" href="../styles/benaja_recipe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="../styles/header.css">
+    <link
+      rel="shortcut icon"
+      href="../img/fav_icon/favicon.ico"
+      type="image/x-icon"
+    />
 </head>
 <body>
-
-
-<header>
-         
-        <div class="header">
-          <div class="vh-10 header">
-     
-   <a href="index.html">  <img src="./img/logo.png" alt="Logo-Kochwelt" class="logo_header"></a>
-    <a href="index.html">  <img src="./img/logo_small.png" alt="Logo-Kochwelt" class="header-logo-small"></a>
-        <div class="navigation">
+    <header>
+      <a href="../index.html"
+        ><img
+          src="../img/logo.png"
+          alt="Kochwelt logo"
+      /></a>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+      />
+      <label
+        for="menu-toggle"
+        class="burger"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul>
+        <li>
           <a
-            href="index.html"
-            class="navbutton"
+            href="../index.html"
             >Start</a
           >
-          <a
-            href="rezept_des_tages.html"
-            class="navbutton"
-            >Rezept des Tages</a
-          >
-          <a
-            href="kontakt.html"
-            class="navbutton"
-            >Kontakt</a
-          >
-          <a
-            href="impressum.html"
-            class="navbutton"
-            >Impressum</a
-          >
-        </div>
-      </div>
-      </div>
-      
+          <div
+            class="link-underline"
+            
+          ></div>
+        </li>
+        <li>
+          <a href="../pages/david_recip.html">Rezept des Tages</a>
+          <div class="link-underline" ></div>
+        </li>
+        <li>
+          <a href="../pages/kontakt.html">Kontakt</a>
+          <div class="link-underline"></div>
+        </li>
+        <li>
+          <a href="../pages/impressum.html">Impressum</a>
+          <div class="link-underline"></div>
+        </li>
+      </ul>
     </header>
 <section id="recipe-of-the-day-gulasch">
-    <h1 class="gulasch_headline">Gulasch</h1>
-        <img src="./img/gulasch.jpg" class="img-gulasch">
+    <h1>Gulasch</h1>
+        <img src="../img/gulasch.jpg" class="img-gulasch">
     
     <div class="mobile-time-difficult-date-btn">
         <div class="padding-right-20px">
             <button class="time-difficult-date-btn">
-                <img class="icons-time-difficult-date" src="img/icons/clock-regular.svg" alt="clock">120 Min
+                <img class="icons-time-difficult-date" src="../img/icons/clock-regular.svg" alt="clock">120 Min
             </button>
         </div>
         <div class="padding-right-20px">
             <button class="time-difficult-date-btn">
-                <img class="icons-time-difficult-date" src="img/icons/brain-solid.svg" alt="brain">hard
+                <img class="icons-time-difficult-date" src="../img/icons/brain-solid.svg" alt="brain">hard
             </button>
         </div>
             <button class="time-difficult-date-btn">
-                <img class="icons-time-difficult-date" src="img/icons/calendar-alt-regular.svg" alt="calendar">
+                <img class="icons-time-difficult-date" src="../img/icons/calendar-alt-regular.svg" alt="calendar">
                     11.02.2026
             </button>
     </div>
@@ -152,7 +163,7 @@
      
         <h2>Rezept erstellt von</h2>
         <div class="author-recept-container">
-            <img src="./img/profile.png" class="img-author">
+            <img src="../img/profile.png" class="img-author">
             <p>Benaja</p>
         </div>
 

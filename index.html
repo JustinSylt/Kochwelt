@@ -8,8 +8,13 @@
     />
     <title>Kochwelt</title>
     <link
+      rel="shortcut icon"
+      href="./img/fav_icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
-      href="main.css"
+      href="./styles/main.css"
     />
     <link
       rel="preconnect"
@@ -27,46 +32,61 @@
 
     <link
       rel="stylesheet"
-      href="header.css"
+      href="./styles/header.css"
     />
     <link
       rel="stylesheet"
       href="Kontaktseite.png"
     />
+    <link
+      rel="stylesheet"
+      href="./styles/footer.css"
+    />
   </head>
   <body>
     <header>
-         
-        <div class="header">
-          <div class="vh-10 header">
-     
-   <a href="index.html">  <img src="./img/logo.png" alt="Logo-Kochwelt" class="logo_header"></a>
-    <a href="index.html">  <img src="./img/logo_small.png" alt="Logo-Kochwelt" class="header-logo-small"></a>
-        <div class="navigation">
+      <a href="./index.html"
+        ><img
+          src="./img/logo.png"
+          alt="Kochwelt logo"
+      /></a>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+      />
+      <label
+        for="menu-toggle"
+        class="burger"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul>
+        <li>
           <a
-            href="index.html"
-            class="navbutton"
+            href="./index.html"
+            id="active-link"
             >Start</a
           >
-          <a
-            href="rezept_des_tages.html"
-            class="navbutton"
-            >Rezept des Tages</a
-          >
-          <a
-            href="kontakt.html"
-            class="navbutton"
-            >Kontakt</a
-          >
-          <a
-            href="impressum.html"
-            class="navbutton"
-            >Impressum</a
-          >
-        </div>
-      </div>
-      </div>
-      
+          <div
+            class="link-underline"
+            id="active-link-underline"
+          ></div>
+        </li>
+        <li>
+          <a href="./pages/david_recip.html">Rezept des Tages</a>
+          <div class="link-underline"></div>
+        </li>
+        <li>
+          <a href="./pages/kontakt.html">Kontakt</a>
+          <div class="link-underline"></div>
+        </li>
+        <li>
+          <a href="./pages/impressum.html">Impressum</a>
+          <div class="link-underline"></div>
+        </li>
+      </ul>
     </header>
     <section id="recipe-of-the-day-da">
       <div class="container-recipe-of-the-day-da">
@@ -94,30 +114,35 @@
         </div>
       </div>
     </section>
-
     <section id="lust-auf-was-neues">
       <h2>Lust auf was Neues?</h2>
       <div id="food-container">
         <div class="img-container">
-          <img
-            src="./img/croissant.jpg"
-            alt="Image of a croissant"
-          />
-          <h3>Frische Croissants</h3>
+          <a href="./pages/schnitzel.html"
+            ><img
+              src="./img/Schnitzel.png"
+              alt="Image of a Schnitzel"
+            />
+            <h3>Schnitzel Wiener Art</h3></a
+          >
         </div>
         <div class="img-container">
-          <img
-            src="./img/croissant.jpg"
-            alt="Image of a croissant"
-          />
-          <h3>Frische Croissants</h3>
+          <a href="./pages/gulasch.html"
+            ><img
+              src="./img/gulasch.jpg"
+              alt="Image of a croissant"
+            />
+            <h3>Gulasch</h3></a
+          >
         </div>
         <div class="img-container">
-          <img
-            src="./img/croissant.jpg"
-            alt="Image of a croissant"
-          />
-          <h3>Frische Croissants</h3>
+          <a href="./pages/MacCheese.html"
+            ><img
+              src="./img/chesse.jpg"
+              alt="Mac n' Cheese"
+            />
+            <h3>Mac n' Cheese</h3></a
+          >
         </div>
       </div>
     </section>
@@ -142,13 +167,49 @@
           </p>
         </div>
         <div>
-          <img id="wok_img"
+          <img
+            id="wok_img"
             src="./img/wok.jpg"
             alt="Wok"
           />
         </div>
       </div>
     </section>
-    <footer></footer>
+    <footer>
+      <a href="">
+        <img
+          id="footer-logo"
+          src="./img/logo.png"
+          alt="logo image" />
+        <img
+          id="footer-logo-small"
+          src="./img/logo_small.png"
+          alt=""
+      /></a>
+      <div class="social-container">
+        <a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="./img/instagram.png"
+            alt=""
+            class="footer-social-img" /></a
+        ><a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="./img/twitter.png"
+            alt=""
+            class="footer-social-img" /></a
+        ><a
+          href="https://www.google.com/"
+          target="_blank"
+          ><img
+            src="./img/linkedin.png"
+            alt=""
+            class="footer-social-img"
+        /></a>
+      </div>
+    </footer>
   </body>
 </html>
