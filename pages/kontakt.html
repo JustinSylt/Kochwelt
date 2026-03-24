@@ -45,6 +45,10 @@
       src="../scripts/header.js"
       defer
     ></script>
+    <script
+      src="../scripts/kontakt.js"
+      defer
+    ></script>
   </head>
   <body>
     <header>
@@ -101,12 +105,13 @@
         type="text"
         class="basic_style"
         placeholder="Max mustermann"
+        id="name-input"
       />
 
       <p class="margin_bottom_0">Deine Email:</p>
       <input
         name="deine Email"
-        type="text"
+        type="email"
         class="basic_style"
         placeholder="max@mustermann.com"
       />
@@ -121,10 +126,12 @@
         action="mailto:mauch.benaja@gmx.de"
         method="post"
         enctype="text/plain"
+        id="contact-form"
       >
         <button
           type="submit"
           class="abschicken"
+          onclick="return checkForEmptyInput();"
         >
           Abschicken
         </button>
