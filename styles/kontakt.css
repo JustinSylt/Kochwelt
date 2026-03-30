@@ -13,62 +13,54 @@ p {
   font-size: 18px;
 }
 
-.kontakt_feld {
-  height: fit-content;
-  background-color: #dcdcdc;
+form {
+  margin: auto;
   display: flex;
   flex-direction: column;
-  border-radius: 4%;
-  padding: 20px;
-  margin: auto;
-  width: 420px;
+  align-items: center;
+  gap: 12px;
+  background-color: #dcdcdc;
+  border-radius: 24px;
+  padding: 24px;
+  width: 25%;
 }
 
-.abschicken {
+textarea {
+  height: 196px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+input {
+  border-radius: 8px;
+  height: 24px;
+  padding: 4px;
+  border: 1px solid #dcdcdc;
+}
+
+button {
   background-color: #008000;
   color: white;
-  border: none;
-  padding: 8px 32px;
-  font-size: 16px;
-}
-
-.abschicken:hover {
-  cursor: pointer;
-  background-color: #06b806;
-}
-
-.margin_bottom_0 {
-  margin-bottom: 0;
-}
-
-.basic_style {
-  border: none;
+  width: 30%;
+  border: 1px solid #008000;
+  padding: 4px;
   border-radius: 8px;
-  margin-bottom: 0;
-  height: 24px;
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 24px;
-  padding: 6px;
+  cursor: pointer;
 }
 
-.deine_nachricht_height {
-  height: 180px;
+button:hover {
+  background-color: #00b100;
+  border-color: #00b100;
 }
 
-#contact-form {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 650px) {
-  .kontakt_feld {
-    width: 300px;
-  }
-}
-
-@media (max-width: 420px) {
-  .kontakt_feld {
-    width: 200px;
+@media (max-width: 800px) {
+  form {
+    width: 60%;
   }
 }

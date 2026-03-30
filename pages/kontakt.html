@@ -87,47 +87,41 @@
       </ul>
     </header>
 
-    <div class="kontakt_feld">
-      <h2>Kontaktiere uns</h2>
-
-      <p class="margin_bottom_0">Dein Name:</p>
-      <input
-        name="Dein Name"
-        type="text"
-        class="basic_style"
-        placeholder="Max mustermann"
-        id="name-input"
-      />
-
-      <p class="margin_bottom_0">Deine Email:</p>
-      <input
-        name="deine Email"
-        type="email"
-        class="basic_style"
-        placeholder="max@mustermann.com"
-      />
-
-      <p class="margin_bottom_0">Deine Nachricht:</p>
-      <textarea
-        class="basic_style deine_nachricht_height"
-        placeholder="Ihre Nachricht..."
-      ></textarea>
-
-      <form
-        action="mailto:mauch.benaja@gmx.de"
-        method="post"
-        enctype="text/plain"
-        id="contact-form"
+    <form
+      action="https://formspree.io/f/xojpdeyk"
+      method="POST"
+      class="kontakt_feld"
+      id="contact-form"
+    >
+      <label class="form-label"><h1>contact us</h1></label>
+      <label class="form-label">
+        Your email:
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="max@mustermann.com"
+        />
+      </label>
+      <label
+        id="text-area"
+        class="form-label"
       >
-        <button
-          type="submit"
-          class="abschicken"
-          onclick="return checkForEmptyInput();"
-        >
-          Abschicken
-        </button>
-      </form>
-    </div>
+        Your message:
+        <textarea
+          name="message"
+          required
+          class="deine_nachricht_height"
+          placeholder="your message..."
+        ></textarea>
+      </label>
+      <button
+        type="submit"
+        class="abschicken"
+      >
+        Send
+      </button>
+    </form>
 
     <footer>
       <a href="../index.html">
