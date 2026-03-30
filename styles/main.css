@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/raleway-v37-latin-500.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Verbessert Ladeverhalten */
+}
+
 body {
   color: black;
   margin: 0;
@@ -18,10 +26,6 @@ h3 {
 
 p {
   font-size: 18px;
-}
-
-header {
-  height: 8vh;
 }
 
 .img-recipe-of-the-day-da {
