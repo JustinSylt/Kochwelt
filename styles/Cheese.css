@@ -12,6 +12,10 @@ button {
   font-size: 16px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
