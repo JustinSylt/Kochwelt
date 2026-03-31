@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/raleway-v37-latin-500.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Verbessert Ladeverhalten */
+}
+
 body {
   color: black;
   margin: 0;
@@ -18,10 +26,6 @@ h3 {
 
 p {
   font-size: 18px;
-}
-
-header {
-  height: 8vh;
 }
 
 .img-recipe-of-the-day-da {
@@ -103,6 +107,10 @@ header {
   gap: 8px;
 }
 
+#wok-info-text {
+  text-align: center;
+}
+
 @media (max-width: 1610px) {
   .p-lasagne-info {
     padding-bottom: 0px;
@@ -115,7 +123,8 @@ header {
     height: 280px;
   }
 
-  .p-lasagne-info {
+  .p-lasagne-info,
+  #wok-info-text {
     margin-bottom: 0px;
     font-size: 16px;
   }
@@ -141,7 +150,8 @@ header {
 }
 
 @media (max-width: 880px) {
-  .p-lasagne-info {
+  .p-lasagne-info,
+  #wok-info-text {
     font-size: 14px;
   }
 
@@ -233,15 +243,22 @@ header {
 
 @media (max-width: 670px) {
   #section_header h2 {
-    font-size: 24px;
-  }
-
-  #section_subheader p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   #wok_vs_pfanne {
     padding: 96px 32px 96px 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  #wok-info-text,
+  .p-lasagne-info {
+    font-size: 12px;
+  }
+
+  #section_header h2 {
+    font-size: 15px;
   }
 }
 /* End of: Content Pfanne vs Wok & Footer */

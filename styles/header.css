@@ -2,9 +2,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 96px;
+  height: 12vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 12px 128px;
+  padding: 0px 128px;
 }
 
 header img {

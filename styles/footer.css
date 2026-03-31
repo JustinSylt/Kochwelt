@@ -4,10 +4,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 12vh;
 }
 
 #footer-logo {
-  width: 300px;
+  width: 240px;
 }
 
 #footer-logo-small {
@@ -16,6 +17,7 @@ footer {
 
 .footer-social-img {
   width: 80px;
+  color: white;
 }
 
 .social-container {
